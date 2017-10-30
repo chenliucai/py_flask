@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block head%}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/22.css') }}">
+{% endblock %}
+{% block title%}注册{% endblock %}
+{%  block body %}
+      <form action="" method="post">
+    <!--bootsrtap  表单的样式代码-->
+    <div class="form-signin"><!--登录的盒子-->
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="手机号" name="telephone">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="用户名" name="username">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="密码" name="password1">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="确认密码" name="password2">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" >立即注册</button>  <!--登录按钮的样式控制，btn-block让扥估按钮和输入框一样长-->
+        </div>
+    </div>
+</form>
+{#    <h3 class="page-title">注册</h3>#}
+{#    <from action="" method="post">#}
+{#        <div class="form-container">#}
+{#            <div class="form-group">#}
+{#                <input type="text" class="form-control" placeholder="手机换号吗" name="telephone">#}
+{#            </div>#}
+{#            <div class="form-group">#}
+{#                <input type="text" class="form-control" placeholder="用户名" name="username">#}
+{#            </div>#}
+{#            <div class="form-group">#}
+{#                <input type="password" class="form-control" placeholder="密码" name="password1">#}
+{#            </div>#}
+{#            <div class="form-group">#}
+{#                <input type="password" class="form-control" placeholder="重复输入密码" name="password2">#}
+{#            </div>#}
+{#            <div class="form-group">#}
+{#                <button class="btn btn-primary btn-block">立即注册</button>#}
+{#            </div>#}
+{#        </div>#}
+{#    </from>#}
+{% endblock %}
+{#{% block %}{% endblock %}#}
+{#{% block %}{% endblock %}#}
+{#{% block %}{% endblock %}#}
+{#{% block %}{% endblock %}#}
